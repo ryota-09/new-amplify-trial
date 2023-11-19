@@ -9,6 +9,7 @@ const interSemiBold = fetch(
 ).then((res) => res.arrayBuffer());
 
 export async function GET(req: NextRequest): Promise<Response | ImageResponse> {
+  console.log("@@@@@@@@@@@@@@@@@@@","api/og/route.tsx call")
   try {
     const { searchParams } = new URL(req.url);
     const isLight = req.headers.get('Sec-CH-Prefers-Color-Scheme') === 'light';

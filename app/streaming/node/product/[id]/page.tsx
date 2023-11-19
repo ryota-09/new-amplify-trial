@@ -8,6 +8,7 @@ import { Ping } from '#/ui/ping';
 import { Suspense } from 'react';
 
 export default async function Page({ params }: { params: { id: string } }) {
+  console.log("@@@@@@@@@@@@@@@@@@@","streaming/node/product/[id]/page.tsx  call")
   return (
     <div className="space-y-8 lg:space-y-14">
       {/* @ts-expect-error Async Server Component */}

@@ -10,6 +10,7 @@ import { Suspense } from 'react';
 export const runtime = 'experimental-edge';
 
 export default async function Page({ params }: { params: { id: string } }) {
+  console.log("@@@@@@@@@@@@@@@@@@@","streaming/edge/product/[id]/page.tsx  call")
   return (
     <div className="space-y-8 lg:space-y-14">
       {/* @ts-expect-error Async Server Component */}
