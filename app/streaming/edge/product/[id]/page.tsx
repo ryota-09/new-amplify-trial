@@ -7,8 +7,6 @@ import { SingleProduct } from '#/app/streaming/_components/single-product';
 import { Ping } from '#/ui/ping';
 import { Suspense } from 'react';
 
-export const runtime = 'experimental-edge';
-
 export default async function Page({ params }: { params: { id: string } }) {
   console.log("@@@@@@@@@@@@@@@@@@@","streaming/edge/product/[id]/page.tsx  call")
   return (
