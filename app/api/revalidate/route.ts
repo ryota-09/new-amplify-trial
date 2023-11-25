@@ -5,9 +5,8 @@ export async function GET(request: NextRequest) {
   const path = request.nextUrl.searchParams.get('path') || '/isr/[id]';
   console.log("@@@@@@@@@")
   console.log("EdgeRuntime" in globalThis)
-  console.log(globalThis)
   console.log("@@@@@@@@@")
-  
+
   const collection =
     request.nextUrl.searchParams.get('collection') || 'collection';
   revalidatePath(path);
